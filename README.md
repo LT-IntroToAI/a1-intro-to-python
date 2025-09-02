@@ -1,168 +1,125 @@
-# How to start coding with chatGPT
+# Assignment 1: Python Basics with AI
 
-## Description
-There is a lot of value in using chatGPT (or other generative AI) outside of just asking for answers.  I believe that if you effectively learn how to program, you'll find AI as a tool that helps you speed up daily tasks instead of a tool that will replace you.  In order to do this we need to know how to ask it the correct questions and use it as a great resource.
+## Overview
+This assignment introduces you to Python programming fundamentals while teaching you how to effectively collaborate with AI tools. You'll use an AI assistant to generate practice problems, then work through them to build your programming skills.
 
-## How to Ask Questions
-The majority of developers work by searching for information on Google and StackOverflow, in fact, this is how I learned how to program, and I still do that.  So, it is completely normal for you to spend a lot of time on those platforms, including chatGPT. You just need to know how to ask the correct questions, and you won't always ask the correct questions, so you'll continue to learn from your mistakes.
+**Key Goals:**
+- Learn Python basics: variables, data types, conditionals, loops, and functions
+- Practice effective AI collaboration techniques
+- Build problem-solving skills through guided practice
 
-1. Learn the basics first - Before we start using chatGPT extensively we should learn the basics of python first.  Everyone should have some basic programming knowledge, but we will go over the basics of python.  I'm going to go over a lot of information, but I would also recommend doing a free online tutorial like this one on freecodecamp.
-2. Ask questions, then learn - Having an answer and just copying and pasting it won't make us learn how to program.  If the code you get from chatGPT works, you should ask it to explain it and why it is used.  At the beginning, your role is to learn so that in the future you can use chatGPT less and be more independent, which is why you should always ask for code explanations.
-3. Solve actual problems - When programming, we can solve the same problem with different methods: this is why it doesn’t make any sense to just ask ChatGPT to generate some random code. We absolutely need to ask chatGPT for something related to a project we are making or a problem we need to solve.
-4. Don't blindly trust it - chatGPT is prone to errors, they are improving and quite good, but they still make mistakes.  Do the research via google and stackOverflow so you know that they answers are correct.
+## What You Need to Submit
+1. **Complete the `a1_practice_problems.py` in class**.  Mr. Berg will push solutions to github
+2. **Complete the `a1.py` file** with your AI-generated problems and solutions
+3. **Complete the reflection questions** in `a1_writeup.md`
+4. **Push your changes to GitHub**
 
-## Always refer to the documentation
-No matter what, you ALWAYS have to read the documentation.  This is how you will learn.  This is true in industry as well, so start doing it now.  If we find a snippet of code that can solve a problem we’re facing, and we don't understand it, then we won’t be able to generalize the code we’re using. This means that in the future we won't be able to solve a similar problem because we haven’t learned anything: we just copied and pasted the code.  
+---
 
-ChatGPT has been known to use libraries that don't even exist.  So, if you go searching for that library and can't find it, then maybe you can ask chatGPT for some more of an explanation on the library to try to figure out where it came from.  If you don't do the research on your own, then you'll never actually know if what you are using is actually factual.
+## Part 1: Generate Your Problem Set
 
-Reading the documentation is always going to give you more understanding of programming and why certain things work.  You may even find better ways to solve problems when going through the documentation.
+### Step 1: Create Your Practice Problems
+Use an AI assistant (ChatGPT, Claude, etc.) to generate a personalized problem set. Here's a sample prompt to get you started:
 
-## Troubleshooting and debugging
-We will be using the debug feature in VSCode, but you can also use chatGPT as an option.  Here is a general workflow for debugging:
-Write your program
-Debug your code in VSCode
-Read the warning you get from the debugger if something doesn't work
-Paste the warning on Google if you don't know how to solve them
-Paste the warning on chatGPT if Googling doesn't solve your problem
-Paste the whole code in chatGPT if you still haven't solved your issue
-Go read the documentation if the previous point solved your issue
+> "I'm learning Python basics in a high school programming class. I have some experience with [mention your previous programming language if any, or say 'I'm new to programming']. Can you create 5-7 practice problems that cover:
+> - Variables and basic data types
+> - Conditionals (if/elif/else)
+> - Loops (for and while)
+> - Functions
+> - Basic list operations
+> 
+> Make them progressively more challenging. Make sure each problem has clear instructions and example inputs/outputs."
 
-Don't blindly paste the code into chatGPT asking it to search for troubles in your code.  First, strive to find them on your own the hard way b/c this is the best way to learn new things. 
+### Step 2: Document Your Problems
+Copy the AI-generated problems into your `a1.py` file. Include the original prompt you used and the problems the AI created.
 
-## Examples
-Ask chatGPT the following question (I used Bard):
-"How can we print in python?"
+---
 
-Here is the answer I received:
-In Python, you can use the `print()` function to display output on the screen. The `print()` function takes one or more arguments, which can be strings, variables, or expressions, and displays them in the console. Here's the basic syntax:
+## Part 2: Solve with AI Collaboration
 
-```python
-print("Hello, world!")  # Printing a string
-```
+For each problem, follow this learning process:
 
-You can also print multiple items by separating them with commas:
+### 🔍 **First Attempt (Independent)**
+- Read the problem carefully
+- Try solving it using your existing knowledge and class notes
+- Write pseudocode or comments explaining your approach
 
-```python
-name = "Alice"
-age = 30
-print("Name:", name, "Age:", age)  # Printing multiple items
-```
+### 🤝 **Get Strategic Help**
+If you're stuck, ask the AI for guidance **without asking for the complete solution**:
 
-If you want to print variables along with strings, you can use string formatting. There are several ways to format strings, and one commonly used method is using f-strings (formatted string literals):
+**Good prompts:**
+- "Can you explain the approach to solve this problem step by step, without giving me the full code?"
+- "What Python concepts do I need to understand to solve this?"
+- "Can you give me a hint about the logic I should use?"
 
-```python
-name = "Bob"
-age = 25
-print(f"Name: {name}, Age: {age}")  # Using f-string for formatting
-```
+**Avoid these prompts:**
+- "Write the complete function for me"
+- "Give me the answer"
+- "Fix my code" (without explaining what you tried)
 
-In addition to printing strings and variables, you can print the results of expressions:
+### 💡 **Learn Through Implementation**
+When you need specific help:
+- "How do I check if a number is even in Python?"
+- "What's the syntax for a for loop that counts from 1 to n?"
+- "How do I add an item to a list?"
 
-```python
-x = 5
-y = 10
-result = x + y
-print("The sum of", x, "and", y, "is", result)
-```
+### 🧠 **Understand the Solution**
+After implementing each solution, always ask:
+- "Can you explain why this code works and what each part does?"
+- "What would happen if I changed [specific part] of the code?"
+- "Are there other ways to solve this problem?"
 
-You can also control the formatting of the output using various formatting options. For example:
+---
 
-```python
-number = 3.14159
-print("Formatted number: {:.2f}".format(number))  # Formatting with two decimal places
-```
+## Part 3: Best Practices for AI Collaboration
 
-Remember that the `print()` function automatically adds a newline character (`\n`) at the end of the output, which moves the cursor to the next line. If you want to prevent this behavior, you can use the `end` parameter:
+### ✅ **Effective AI Usage**
+1. **Learn the basics first** - Don't rely entirely on AI for fundamental concepts
+2. **Ask for explanations** - Always understand why code works, don't just copy-paste
+3. **Solve real problems** - Work on the specific problems you generated
+4. **Verify and research** - Double-check AI responses with documentation or Google search
 
-```python
-print("Hello,", end=" ")
-print("world!")  # Output: Hello, world!
-```
+### 🔍 **Always Read Documentation**
+- When AI mentions a Python function you don't know, look it up in the official [Python docs](https://docs.python.org/3/)
+- If AI suggests a library that doesn't exist, research it yourself
+- Reading documentation builds deeper understanding than AI explanations alone
 
-These are some of the basic ways to use the `print()` function in Python to display output. Depending on your needs, you can further customize and format the output as desired.
+### 🐛 **Debugging Strategy**
+1. Write your program
+2. Test it yourself first
+3. Read any error messages carefully
+4. Google the error if you don't understand it
+5. Ask AI for help with specific errors, not general "fix my code"
+6. Read documentation for any solutions you implement
+
+---
+
+## Example AI Interactions
+
+### Good Example:
+**Student:** "How can I check if a number is divisible by 3 in Python?"
+
+**Follow-up:** "Thanks! Now can you explain why the modulo operator (%) works for checking divisibility?"
+
+### Better Example:
+**Student:** "I'm trying to write a function that counts vowels in a string. I think I need to loop through each character and check if it's a vowel, but I'm not sure about the syntax for checking if a character is in a list of vowels."
+
+**Follow-up:** "That makes sense! Can you also show me how to make this case-insensitive?"
+
+---
 
 
 ---
 
-That is a lot of information.  The prompt was too generic so chatGPT gave us a generic answer.
-
-So, be specific! 
-Here is a better question:
-
-"I have a list with some strings in Python: how can I print them efficiently?"
-
-If you have a list of strings in Python and you want to print them efficiently, you can use a loop to iterate through the list and print each string. The most common way to do this is by using a `for` loop. Here's an example:
-
-```python
-string_list = ["apple", "banana", "cherry", "date"]
-
-for item in string_list:
-    print(item)
-```
-
-This will iterate through the `string_list` and print each string on a separate line.
-
-If you want to print the strings on the same line or with some specific formatting, you can use the `end` parameter of the `print()` function:
-
-```python
-string_list = ["apple", "banana", "cherry", "date"]
-
-for item in string_list:
-    print(item, end=" ")  # Print on the same line with a space between items
-```
-
-If you want to print the items along with their indices in the list, you can use the `enumerate()` function:
-
-```python
-string_list = ["apple", "banana", "cherry", "date"]
-
-for index, item in enumerate(string_list):
-    print(f"Item at index {index}: {item}")
-```
-
-Using list comprehensions, you can achieve concise printing of the entire list in a single line:
-
-```python
-string_list = ["apple", "banana", "cherry", "date"]
-print(" ".join(string_list))  # Join and print the list items with spaces
-```
-
-This approach is efficient for printing lists, especially when you want to customize the formatting or display of the elements. Choose the method that best fits your specific requirements.
 
 ---
 
-As you can see, it also gives you a lot of information, but super useful information.  At that point you might want to know more about the `join` function, so you could ask it:
+## Tips for Success
 
-"Could you explain the join function with an example"
+- **Start early** - Give yourself time to experiment and learn
+- **Be curious** - Ask follow-up questions when AI gives you interesting answers
+- **Test your code** - Make sure your solutions work with different inputs
+- **Document your process** - Keep notes on what you learn for your writeup
+- **Ask for help** - If you're stuck on AI collaboration strategies, ask Mr. Berg!
 
----
-
-Certainly! The `join()` function is a string method in Python that allows you to concatenate elements of an iterable (like a list, tuple, or set) into a single string. It's a powerful tool for combining strings with a specific separator. Here's how it works:
-
-```python
-separator = " - "
-string_list = ["apple", "banana", "cherry", "date"]
-
-result = separator.join(string_list)
-print(result)
-```
-
-In this example, the `join()` function is called on the `separator` string and passed the `string_list` as its argument. The `join()` function then concatenates the elements of the list using the separator. The output will be:
-
-```
-apple - banana - cherry - date
-```
-
-The separator (" - " in this case) is placed between each pair of adjacent elements in the list, creating a single string. The result is stored in the `result` variable and then printed.
-
-The `join()` function is particularly useful when you want to create nicely formatted output from elements in a list or any other iterable.
-
-Keep in mind that the `join()` function works with strings, so if your list contains non-string elements, you'll need to convert them to strings first using techniques like list comprehensions or mapping functions.
-
----
-
-Now, at this point, you should do other two things:
-
-1. Searching for “join() Python” on Google and see some other examples and read the documentation.
-2. Continue the chat and ask for an example (then, read the documentation that may come with the next examples).
+**Good luck, and have fun exploring Python with your AI learning partner!**
